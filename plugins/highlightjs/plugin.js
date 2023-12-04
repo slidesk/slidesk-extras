@@ -1,3 +1,4 @@
 setTimeout(() => {
+  hljs.addPlugin(new CopyButtonPlugin());
   hljs.highlightAll();
-}, 1000);
+}, 100);
