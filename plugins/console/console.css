@@ -1,0 +1,16 @@
+#console {
+  position: absolute;
+  top: 30%;
+  left: 10%;
+  right: 10%;
+  transform: translateY(-100vh);
+  transition: all 200ms ease;
+}
+
+#console .xterm {
+  width: 100%;
+}
+
+#console.open {
+  transform: translateY(0);
+}
