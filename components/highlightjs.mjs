@@ -1,3 +1,17 @@
+/**
+ * replace
+ * ```js
+ * console.log("my script")
+ * ```
+ *
+ * into a
+ * <pre>
+ *  <code class="language-js">
+ *    console.log("my script")
+ *  </code>
+ * </pre>
+ */
+
 export default (data) => {
   let newData = data;
   [...newData.matchAll(/```(\w*)\n([^`]+)```/gm)].forEach((match) => {
@@ -8,7 +22,7 @@ export default (data) => {
         .replaceAll("<", "&lt;")
         .replaceAll(">", "&gt;")
         .replaceAll('"', "&quot;")
-        .replaceAll("'", "&#039;")}</code></pre>`,
+        .replaceAll("'", "&#039;")}</code></pre>`
     );
   });
   return newData;
