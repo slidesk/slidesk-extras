@@ -1,0 +1,5 @@
+{
+  "addHTML": "<footer id='numslide'></footer>",
+  "onSlideChange": "document.getElementById('numslide').innerText = window.slidesk.currentSlide + 1;",
+  "addStyles": ["./plugins/number/number.css"]
+}
