@@ -8,7 +8,7 @@ Add a the code below :
 </div>
 ```
 
-By default add the SliDesk logo at the botom right corner.
+By default add the SliDesk logo at the bottom right corner.
 
 The logo displayed can be changed be by over-writtng the CSS Class "banner-content".
 
