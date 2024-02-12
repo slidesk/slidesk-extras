@@ -1,11 +1,12 @@
 export default async (message) => {
   const { cwd, command, key } = JSON.parse(message);
   // eslint-disable-next-line no-undef
-  const proc = Bun.spawn(command.split(" "), {
+  const proc = Bun.spawnSync(command.split(" "), {
     cwd: cwd ?? process.env.HOME,
+    onExit: () => {},
   });
   return {
     key,
-    result: await new Response(proc.stdout).text(),
+    result: proc.stdout.toString(),
   };
 };
