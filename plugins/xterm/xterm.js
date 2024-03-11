@@ -1,7 +1,7 @@
 window.slidesk.xterm_response = (data) => {
   window.slidesk.terminals[data.response.key].writeln("");
   [...data.response.result.trim().split("\n")].forEach((l) =>
-    window.slidesk.terminals[data.response.key].writeln(l),
+    window.slidesk.terminals[data.response.key].writeln(l)
   );
   window.slidesk.terminals[data.response.key].prompt();
 };
@@ -59,6 +59,9 @@ class XTerm {
           else if (this.command.length <= 3) this.cwd = window.slidesk.cwd;
           else this.cwd = `${this.cwd}${this.command.substring(3)}/`;
           this.prompt();
+        } else if (this.command === "clear") {
+          this.terminal.clear();
+          this.prompt();
         } else {
           window.slidesk.io.send(
             JSON.stringify({
@@ -66,7 +69,8 @@ class XTerm {
               key: this.key,
               command: this.command,
               cwd: this.cwd,
-            }),
+              env: window.slidesk.env,
+            })
           );
         }
         this.command = "";
@@ -93,7 +97,7 @@ class XTerm {
     this.terminal.onData((e) => {
       if (this.fromNotes)
         window.slidesk.io.send(
-          JSON.stringify({ action: "xterm_char", char: e }),
+          JSON.stringify({ action: "xterm_char", char: e })
         );
       this.treat(e);
     });
@@ -129,13 +133,13 @@ window.slidesk.terminals = [];
 window.slidesk.manageXTerm = () => {
   if (
     !window.slidesk.slides[window.slidesk.currentSlide].classList.contains(
-      "xtermed",
+      "xtermed"
     )
   ) {
     window.slidesk.slides[window.slidesk.currentSlide].classList.add("xtermed");
     const xterms =
       window.slidesk.slides[window.slidesk.currentSlide].querySelectorAll(
-        ".xterm",
+        ".xterm"
       );
     if (xterms.length) {
       xterms.forEach((el, i) => {
@@ -163,7 +167,7 @@ window.slidesk.manageXTermNotes = () => {
     if (document.querySelector("#sd-sv-current .xterm")) {
       window.slidesk.terminals.notes = new XTerm("notes", true);
       window.slidesk.terminals.notes.attachTo(
-        document.querySelector("#sd-sv-future"),
+        document.querySelector("#sd-sv-future")
       );
       document.querySelector("#sd-sv-future").classList.add("xtermed");
       document.querySelector("#sd-sv-future").addEventListener("wheel", (e) => {
