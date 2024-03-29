@@ -1,0 +1,4 @@
+{
+  "addHTMLFromFiles": ["./plugins/banner/banner.html"],
+  "addStyles": ["./plugins/banner/banner.css"]
+}
