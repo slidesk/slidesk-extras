@@ -12,5 +12,13 @@
     "./plugins/xterm/xterm.notes.css",
     "./plugins/xterm/xterm.css"
   ],
-  "onSpeakerViewSlideChange": "window.slidesk.manageXTermNotes();"
+  "onSpeakerViewSlideChange": "window.slidesk.manageXTermNotes();",
+  "files": [
+    "xterm.css",
+    "xterm.js",
+    "xterm.lib.css",
+    "xterm.lib.js",
+    "xterm.notes.css",
+    "xterm.ws.mjs"
+  ]
 }

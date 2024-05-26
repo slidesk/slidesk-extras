@@ -14,5 +14,14 @@
     "./plugins/highlightjs/highlightjs.copy.js"
   ],
   "addSpeakerStyles": ["./plugins/highlightjs/default.min.css"],
-  "onSpeakerViewSlideChange": "if (hljs) { hljs.addPlugin(new CopyButtonPlugin()); hljs.highlightAll(); }"
+  "onSpeakerViewSlideChange": "if (hljs) { hljs.addPlugin(new CopyButtonPlugin()); hljs.highlightAll(); }",
+  "files": [
+    "dark.min.css",
+    "default.min.css",
+    "highlight.min.js",
+    "highlightjs.copy.css",
+    "highlightjs.copy.js",
+    "plugin.css",
+    "plugin.js"
+  ]
 }

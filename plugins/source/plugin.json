@@ -2,5 +2,6 @@
   "addHTML": "<button id=\"sd-showSource\" popovertarget=\"sd-source\">&lt;/&gt;</button><div id=\"sd-source\" popover><pre>x</pre></div>",
   "addScripts": ["./plugins/source/source.js"],
   "addStyles": ["./plugins/source/source.css"],
-  "onSlideChange": "window.slidesk.changeSource();"
+  "onSlideChange": "window.slidesk.changeSource();",
+  "files": ["source.css", "source.js"]
 }
