@@ -4,7 +4,6 @@
     "./plugins/highlightjs/plugin.js"
   ],
   "addStyles": [
-    "./plugins/highlightjs/dark.min.css",
     "./plugins/highlightjs/plugin.css"
   ],
   "addSpeakerScripts": [
