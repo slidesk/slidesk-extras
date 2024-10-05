@@ -6,7 +6,8 @@ const OPTIONS_TERM = {
   cols: 100,
   theme: {
     background: "#333"
-  }
+  },
+  fontFamily: '"MesloLGS NF", "DejaVu Sans Mono", Consolas, "Lucida Console", monospace'
 };
 
 let term;
