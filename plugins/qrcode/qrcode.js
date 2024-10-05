@@ -1,6 +1,8 @@
-window.slidesk.qrcode = () => {
-  document.getElementById("sd-qrcode").innerHTML = window.QRCodeRender(
-    window.QRCodeGetMatrix(window.location.href),
-    "#000",
-  );
-};
+window.addEventListener("load", () => {
+  document.querySelectorAll(".sd-qrcode").forEach((e, _) => {
+    e.innerHTML = window.QRCodeRender(
+      window.QRCodeGetMatrix(e.getAttribute("data-url")),
+      "#000",
+    );
+  })
+});
