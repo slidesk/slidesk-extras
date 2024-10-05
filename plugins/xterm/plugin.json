@@ -2,7 +2,6 @@
   "addScripts": ["./plugins/xterm/xterm.lib.js", "./plugins/xterm/xterm.js"],
   "addStyles": ["./plugins/xterm/xterm.lib.css", "./plugins/xterm/xterm.css"],
   "addWS": "./plugins/xterm/xterm.ws.mjs",
-  "onSlideChange": "window.slidesk.manageXTerm();",
   "addSpeakerScripts": [
     "./plugins/xterm/xterm.lib.js",
     "./plugins/xterm/xterm.js"
@@ -12,13 +11,5 @@
     "./plugins/xterm/xterm.notes.css",
     "./plugins/xterm/xterm.css"
   ],
-  "onSpeakerViewSlideChange": "window.slidesk.manageXTermNotes();",
-  "files": [
-    "xterm.css",
-    "xterm.js",
-    "xterm.lib.css",
-    "xterm.lib.js",
-    "xterm.notes.css",
-    "xterm.ws.mjs"
-  ]
+  "files": ["xterm.css", "xterm.js", "xterm.lib.css", "xterm.lib.js", "xterm.ws.mjs"]
 }
