@@ -1,4 +1,5 @@
 {
   "addStyles": ["./plugins/mermaid/mermaid.css"],
-  "addScripts": ["./plugins/mermaid/mermaid.min.js"]
+  "addScripts": ["./plugins/mermaid/mermaid.min.js"],
+  "files": ["mermaid.css", "mermaid.min.js"]
 }
