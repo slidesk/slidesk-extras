@@ -1,0 +1,4 @@
+{
+    "addScripts": ["https://cjrtnc.leaningtech.com/2.3/loader.js", "./plugins/plantuml/plantuml.js"],
+    "files": ["plantuml.js", "plantuml-core.jar", "plantuml-core.jar.js"]
+}
