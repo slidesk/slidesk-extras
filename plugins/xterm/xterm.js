@@ -2,6 +2,7 @@ const OPTIONS_TERM = {
   useStyle: true,
   screenKeys: true,
   cursorBlink: true,
+  fontFamily: '"MesloLGS NF", "DejaVu Sans Mono", Consolas, "Lucida Console", monospace',
   //You have to set the same number in your server
   cols: 100,
   theme: {
