@@ -1,0 +1,29 @@
+:root {
+  --sd-background-color: #fff;
+  --sd-heading-color: #6abfad;
+  --sd-text-color: #222333;
+  --sd-primary-color: #6abfad;
+}
+
+.split .content {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+}
+
+.split .content > div {
+  width: 50%;
+  padding: 1vh 1vw;
+}
+
+.title-top {
+  display: block;
+}
+
+.text-left {
+  align-items: start;
+
+  h2 {
+    text-align: left;
+  }
+}
