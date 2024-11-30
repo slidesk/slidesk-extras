@@ -1,3 +1,4 @@
+// from : https://github.com/huytd/highlightjs-focus
 class LineFocusPlugin {
   constructor(options) {
     this.currentAttribute = "";
