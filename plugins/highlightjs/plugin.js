@@ -29,7 +29,7 @@ class LineFocusPlugin {
     ];
   }
   'after:highlight'(result) {
-    if (!result.value.includes('hljs-focus processed')) {
+    if (!result.value.includes('hljs-focus processed') && this.currentAttribute) {
       const focusedLines = this.getFocusedLines(this.currentAttribute);
       const lines = result.value.split("\n").map((line, num) => {
         const focused = focusedLines.indexOf(num + 1) !== -1;
