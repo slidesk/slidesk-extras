@@ -1,3 +1,4 @@
 {
-  "addScripts": ["./plugins/keyboard/keyboard.js"]
+	"addScripts": ["./plugins/keyboard/keyboard.js"],
+	"files": ["keyboard.js"]
 }
