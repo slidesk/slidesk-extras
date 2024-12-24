@@ -1,6 +1,5 @@
 .steps li {
     opacity: 30%;
-    transition: opacity var(--animationSteps);
   }
   
   .steps li.step-shown {

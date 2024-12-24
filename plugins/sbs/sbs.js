@@ -38,6 +38,11 @@ window.slidesk.next = () => {
     ) {
       window.slidesk.PLUGIN_SBS.next();
     } else {
+      if (window.slidesk.io)
+        window.slidesk.sendMessage({
+          action: "nextSbs",
+          payload: window.slidesk.PLUGIN_SBS.currentStep,
+        });
       window.slidesk.PLUGIN_SBS.steps[
         window.slidesk.PLUGIN_SBS.currentStep++
       ].classList.add("step-shown");
