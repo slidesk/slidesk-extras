@@ -22,6 +22,11 @@ window.slidesk.next = () => {
     if (window.slidesk.step === window.slidesk.maxSteps) {
       window.slidesk.oldNext();
     } else {
+      if (window.slidesk.io)
+        window.slidesk.sendMessage({
+          action: "nextStep",
+          payload: window.slidesk.step,
+        });
       window.slidesk.$lis[window.slidesk.step++].classList.add("step-shown");
     }
   } else window.slidesk.oldNext();
