@@ -1,0 +1,21 @@
+/::
+custom_css: default.css
+::/
+
+## .[cover]
+
+## TITLE
+
+## Default slide
+
+This is a slide with a text
+
+!include(splited.sdf)
+
+!include(splited_percent.sdf)
+
+!include(title_top.sdf)
+
+!include(text_left.sdf)
+
+!include(combine.sdf)

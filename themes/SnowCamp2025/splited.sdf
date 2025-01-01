@@ -1,0 +1,13 @@
+## splited .[split title-top text-left]
+
+<div class="content">
+
+<div>
+This content is on the left
+</div>
+
+<div>
+This content is on the right
+</div>
+
+</div>
