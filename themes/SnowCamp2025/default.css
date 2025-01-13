@@ -1,7 +1,7 @@
 :root {
-  --sd-background-color: #FFFFFF;
-  --sd-heading-color: #00B9FF;
-  --sd-text-color: #222333;
+  --sd-background-color: rgb(249, 249, 249);
+  --sd-heading-color: rgba(46, 40, 65, 0.9);
+  --sd-text-color: #333;
   --sd-primary-color: #8DC63F;
 }
 
@@ -20,13 +20,44 @@
   z-index: -1;
 }
 
-.sd-slide.cover {
+.sd-slide.cover::after {
   background-color: #2E2841;
+  background-image: url(alpes-snow-full-illustration.webp);
+  height: 10vh;
+  bottom:0;
+  top: auto;
+  opacity: 0.90;
 }
 
-.sd-slide.cover::after {
-  background-image: url(alpes-snow-full-illustration.webp);
-  opacity: 0.75;
+.speaker {
+  margin: 3vh;
+
+  figure.speaker-photo {
+    float: right;
+    margin-left: 2vw;
+    width: 25%;
+
+    img {
+      border-radius: 100%;
+      width: 100%;
+    }
+  }
+
+  ul {
+    list-style-type: none;
+
+    li {
+      margin-bottom: 1vh;
+    }
+  }
+}
+
+.speaker:only-child {
+  margin: 5vh;
+}
+
+.speaker::after {
+  clear: right;
 }
 
 .split .content {
@@ -37,10 +68,8 @@
 
 .split .content > div {
   width: 50%;
-  padding: 1vh 1vw;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  padding: 0 1vw;
+  display: block;
 }
 
 .title-top {
@@ -50,7 +79,11 @@
 .text-left {
   align-items: start;
 
-  h2 {
+  h1, h2, h3, h4, h5, h6 {
     text-align: left;
   }
+}
+
+li p {
+  text-align: justify;
 }
