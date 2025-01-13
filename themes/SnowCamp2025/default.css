@@ -29,6 +29,37 @@
   opacity: 0.90;
 }
 
+.speaker {
+  margin: 3vh;
+
+  figure.speaker-photo {
+    float: right;
+    margin-left: 2vw;
+    width: 25%;
+
+    img {
+      border-radius: 100%;
+      width: 100%;
+    }
+  }
+
+  ul {
+    list-style-type: none;
+
+    li {
+      margin-bottom: 1vh;
+    }
+  }
+}
+
+.speaker:only-child {
+  margin: 5vh;
+}
+
+.speaker::after {
+  clear: right;
+}
+
 .split .content {
   display: flex;
   flex-direction: row;
