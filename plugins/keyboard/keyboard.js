@@ -16,6 +16,20 @@ const fetchMapping = async () => {
     } else {
       window.slidesk.io.send(JSON.stringify({ action: mapping[e.key] }));
     }
+    const d = `${mapping[e.key]}Down`
+    if (typeof window.slidesk[d] !== "undefined") {
+      window.slidesk[d]();
+    } else {
+      window.slidesk.io.send(JSON.stringify({ action: d }));
+    }
+  });
+  document.addEventListener("keyup", (e) => {
+    const d = `${mapping[e.key]}Up`
+    if (typeof window.slidesk[d] !== "undefined") {
+      window.slidesk[d]();
+    } else {
+      window.slidesk.io.send(JSON.stringify({ action: d }));
+    }
   });
 };
 

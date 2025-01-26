@@ -4,7 +4,7 @@ This plugin allows you to control the navigation with a keyboard from the speake
 
 Per default, arrows left and right control next() and previous(), they can't be override.
 
-You can override it with a `mapping.json` file in the root directory of the presentation.
+You can override it with a `keyboard.json` file in the root directory of the presentation.
 
 Example:
 

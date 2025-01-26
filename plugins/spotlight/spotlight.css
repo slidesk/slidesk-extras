@@ -1,0 +1,16 @@
+:root {
+  --spotlight-color: #000000ee;
+  --spotlight-innerRadius: 150px;
+  --spotlight-outerRadius: 200px;
+}
+
+.spotlight {
+  position: fixed;
+  opacity: 1;
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  background: var(--spotlight-color);
+  pointer-events: none;
+}
