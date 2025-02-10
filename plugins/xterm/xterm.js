@@ -20,25 +20,17 @@ document.querySelectorAll(".xterm").forEach((xterm, _) => {
   term = new Terminal(OPTIONS_TERM);
   term.open(xterm);
   term.onData((data) => {
-    window.slidesk.io.send(
-      JSON.stringify({
+    window.slidesk.sendMessage(
+      {
         plugin: "xterm",
         data
-      })
+      }
     );
   });
-  window.slidesk.io.send(
-    JSON.stringify({
+  window.slidesk.sendMessage(
+    {
       plugin: "xterm",
-      data: "\n"
-    })
+      data: "clear\n"
+    }
   );
-  setTimeout(() => {
-    window.slidesk.io.send(
-      JSON.stringify({
-        plugin: "xterm",
-        data: "clear\n"
-      })
-    );
-  }, 500)
 });
