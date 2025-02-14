@@ -12,3 +12,9 @@
 .sd-slide.sd-previous {
   transform: translateX(0);
 }
+
+@media print {
+  .sd-slide {
+    opacity: 1;
+  }
+}
