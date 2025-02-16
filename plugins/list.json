@@ -5,11 +5,17 @@
 	"gamepad",
 	"gamepad-notes",
 	"highlightjs",
+	"keyboard",
+	"keyboard-notes",
+	"mermaid",
 	"number",
+	"plantuml",
+	"progress",
 	"qrcode",
 	"reload",
 	"sbs",
 	"source",
 	"spotlight",
+	"steps",
 	"xterm"
 ]
