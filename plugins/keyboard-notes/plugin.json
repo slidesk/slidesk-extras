@@ -1,4 +1,4 @@
 {
-	"addSpeakerScripts": ["./plugins/keyboard-notes/keyboard.js"],
-	"files": ["keyboard.js"]
+  "addSpeakerScripts": ["plugins/keyboard-notes/keyboard.js"],
+  "files": ["keyboard.js"]
 }

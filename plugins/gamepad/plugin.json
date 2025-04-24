@@ -1,4 +1,4 @@
 {
-  "addScripts": ["./plugins/gamepad/gamepad.js"],
+  "addScripts": ["plugins/gamepad/gamepad.js"],
   "files": ["gamepad.js"]
 }

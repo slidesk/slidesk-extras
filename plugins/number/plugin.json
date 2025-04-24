@@ -1,7 +1,7 @@
 {
   "addHTML": "<footer id='numslide'></footer>",
   "onSlideChange": "window.slidesk.plugin_number();",
-  "addStyles": ["./plugins/number/number.css"],
-  "addScripts": ["./plugins/number/number.js"],
+  "addStyles": ["plugins/number/number.css"],
+  "addScripts": ["plugins/number/number.js"],
   "files": ["number.js", "number.css"]
 }

@@ -1,6 +1,6 @@
 {
   "addHTML": "<div id=\"console\"></div>",
-  "addScripts": ["./plugins/console/console.js"],
-  "addStyles": ["./plugins/console/console.css"],
+  "addScripts": ["plugins/console/console.js"],
+  "addStyles": ["plugins/console/console.css"],
   "files": ["console.js", "console.css"]
 }
