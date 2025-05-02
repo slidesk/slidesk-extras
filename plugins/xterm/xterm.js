@@ -44,6 +44,7 @@ window.slidesk.xtemInit = () => {
   const term =
     window.slidesk.slides[window.slidesk.currentSlide].querySelector(".xterm");
   if (term !== null) {
+    term.innerHTML = "";
     window.slidesk.term = new Terminal(OPTIONS_TERM);
     window.slidesk.term.onData((data) => {
       window.slidesk.sendMessage({
