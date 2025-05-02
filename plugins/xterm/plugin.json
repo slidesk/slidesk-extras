@@ -2,6 +2,7 @@
   "addScripts": ["plugins/xterm/xterm.lib.js", "plugins/xterm/xterm.js"],
   "addStyles": ["plugins/xterm/xterm.lib.css", "plugins/xterm/xterm.css"],
   "addWS": "plugins/xterm/xterm.ws.mjs",
+  "onSlideChange": "window.slidesk.xtemInit();",
   "files": [
     "xterm.css",
     "xterm.js",

@@ -2,35 +2,61 @@ const OPTIONS_TERM = {
   useStyle: true,
   screenKeys: true,
   cursorBlink: true,
-  fontFamily: '"MesloLGS NF", "DejaVu Sans Mono", Consolas, "Lucida Console", monospace',
-  //You have to set the same number in your server
   cols: 100,
   theme: {
-    background: "#333"
-  }
+    foreground: "#f8dcc0",
+    background: "#1f1d45",
+    cursor: "#efbf38",
+
+    black: "#050404",
+    brightBlack: "#4e7cbf",
+
+    red: "#bd0013",
+    brightRed: "#fc5f5a",
+
+    green: "#4ab118",
+    brightGreen: "#9eff6e",
+
+    yellow: "#e7741e",
+    brightYellow: "#efc11a",
+
+    blue: "#0f4ac6",
+    brightBlue: "#1997c6",
+
+    magenta: "#665993",
+    brightMagenta: "#9b5953",
+
+    cyan: "#70a598",
+    brightCyan: "#c8faf4",
+
+    white: "#f8dcc0",
+    brightWhite: "#f6f5fb",
+  },
 };
 
-let term;
+window.slidesk.term = null;
 
 window.slidesk.xterm_response = (data) => {
-  term.write(data.data);
+  if (window.slidesk.term) window.slidesk.term.write(data.data);
 };
 
-document.querySelectorAll(".xterm").forEach((xterm, _) => {
-  term = new Terminal(OPTIONS_TERM);
-  term.open(xterm);
-  term.onData((data) => {
-    window.slidesk.sendMessage(
-      {
+window.slidesk.xtemInit = () => {
+  const term =
+    window.slidesk.slides[window.slidesk.currentSlide].querySelector(".xterm");
+  if (term !== null) {
+    window.slidesk.term = new Terminal(OPTIONS_TERM);
+    window.slidesk.term.onData((data) => {
+      window.slidesk.sendMessage({
         plugin: "xterm",
-        data
-      }
-    );
-  });
-  window.slidesk.sendMessage(
-    {
+        data,
+      });
+    });
+    window.slidesk.term.open(term);
+    window.slidesk.sendMessage({
       plugin: "xterm",
-      data: "clear\n"
-    }
-  );
-});
+      data: "clear\n",
+    });
+  } else {
+    window.slidesk.term = null;
+  }
+};
