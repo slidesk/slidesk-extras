@@ -3,6 +3,8 @@ mermaid.initialize({
   startOnLoad: false
 });
 
-mermaid.run({
-  querySelector: '.language-mermaid'
-});
+window.slidesk.mermaidChange = () => {
+  mermaid.run({
+    querySelector: '.sd-current .language-mermaid'
+  });
+};
