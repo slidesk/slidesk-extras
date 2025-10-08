@@ -3,5 +3,6 @@
   "onSlideChange": "window.slidesk.progressActive();",
   "addStyles": ["plugins/progress/progress.css"],
   "addScripts": ["plugins/progress/progress.js"],
-  "files": ["progress.js", "progress.css"]
+  "files": ["progress.js", "progress.css"],
+  "tags": ["progress", "presentation"]
 }

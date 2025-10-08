@@ -9,5 +9,6 @@
     "xterm.lib.css",
     "xterm.lib.js",
     "xterm.ws.mjs"
-  ]
+  ],
+  "tags": ["xterm", "terminal", "shell"]
 }

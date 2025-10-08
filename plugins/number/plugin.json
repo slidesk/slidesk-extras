@@ -3,5 +3,6 @@
   "onSlideChange": "window.slidesk.plugin_number();",
   "addStyles": ["plugins/number/number.css"],
   "addScripts": ["plugins/number/number.js"],
-  "files": ["number.js", "number.css"]
+  "files": ["number.js", "number.css"],
+  "tags": ["number", "presentation", "page", "slide"]
 }

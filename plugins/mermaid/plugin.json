@@ -1,6 +1,7 @@
 {
-	"addStyles": ["plugins/mermaid/mermaid.css"],
-	"addScripts": ["plugins/mermaid/mermaid.min.js", "plugins/mermaid/plugin.js"],
-	"onSlideChange": "window.slidesk.mermaidChange();",
-	"files": ["mermaid.css", "mermaid.min.js", "plugin.js"]
+  "addStyles": ["plugins/mermaid/mermaid.css"],
+  "addScripts": ["plugins/mermaid/mermaid.min.js", "plugins/mermaid/plugin.js"],
+  "onSlideChange": "window.slidesk.mermaidChange();",
+  "files": ["mermaid.css", "mermaid.min.js", "plugin.js"],
+  "tags": ["mermaid", "presentation", "diagram"]
 }

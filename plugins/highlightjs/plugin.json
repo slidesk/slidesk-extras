@@ -9,5 +9,6 @@
   ],
   "addSpeakerScripts": ["plugins/highlightjs/highlight.min.js"],
   "addSpeakerStyles": ["plugins/highlightjs/github.min.css"],
-  "files": ["github.min.css", "highlight.min.js", "plugin.css", "plugin.js"]
+  "files": ["github.min.css", "highlight.min.js", "plugin.css", "plugin.js"],
+  "tags": ["highlight", "highlightjs", "code"]
 }

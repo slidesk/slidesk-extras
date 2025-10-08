@@ -1,5 +1,6 @@
 {
   "files": ["spotlight.js", "spotlight.css"],
   "addScripts": ["plugins/spotlight/spotlight.js"],
-  "addStyles": ["plugins/spotlight/spotlight.css"]
+  "addStyles": ["plugins/spotlight/spotlight.css"],
+  "tags": ["spotlight", "presentation"]
 }

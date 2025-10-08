@@ -23,5 +23,4 @@ And because this element is present, the element below moves
 
 ...
 
-
 ```
