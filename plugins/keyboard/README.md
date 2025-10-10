@@ -19,3 +19,15 @@ Example:
 Keys correspond to the keyboard's key and values correspond to action ("next", "previous", "fullscreen", ...).
 
 WARNING: `keyboard` does not be loaded with `keyboard-notes`
+
+Example: This my configuration to use with a 8BitDo Micro:
+
+```json
+{
+	"k": "next",
+	",": "previous",
+	"c": "next",
+	"d": "previous",
+	"j": "webcam"
+}
+```

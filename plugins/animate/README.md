@@ -1,8 +1,8 @@
 # SliDesk Plugin: Animate
 
-This plugin lets you add a timer to automatically advance to the next slide.
+This plugin lets you animate elements of your page.
 
-To allow that, you need to add a class on the slide, prefixed with `auto-`.
+To allow that, you need to add a class on the slide and its next: `animate`.
 
 ```
 ## A slide with no animation
