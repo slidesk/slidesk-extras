@@ -46,17 +46,21 @@ window.slidesk.xtemInit = () => {
   if (term !== null) {
     term.innerHTML = "";
     window.slidesk.term = new Terminal(OPTIONS_TERM);
+    window.slidesk.term.open(term);
     window.slidesk.term.onData((data) => {
       window.slidesk.sendMessage({
-        plugin: "xterm",
+        plugin: "@gouz__xterm",
         data,
       });
     });
-    window.slidesk.term.open(term);
     window.slidesk.sendMessage({
-      plugin: "xterm",
+      plugin: "@gouz__xterm",
       data: "clear\n",
     });
+    setTimeout(() => {
+      const init = term.getAttribute("data-cmd");
+      if (init) window.slidesk.term.write(init);
+    }, 200);
   } else {
     window.slidesk.term = null;
   }

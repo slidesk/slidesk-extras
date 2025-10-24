@@ -1,0 +1,14 @@
+<div class="mid-cover-right">
+<div class="text">
+
+<sd-title />
+
+<sd-content />
+
+</div>
+<div class="img">
+
+<sd-img />
+
+</div>
+</div>
