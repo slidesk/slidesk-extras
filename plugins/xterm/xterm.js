@@ -59,7 +59,13 @@ window.slidesk.xtemInit = () => {
     });
     setTimeout(() => {
       const init = term.getAttribute("data-cmd");
-      if (init) window.slidesk.term.write(init);
+      if (init) {
+        window.slidesk.term.write(init);
+        window.slidesk.sendMessage({
+          plugin: "@gouz__xterm",
+          data: init,
+        });
+      }
     }, 200);
   } else {
     window.slidesk.term = null;
