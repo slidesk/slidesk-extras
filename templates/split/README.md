@@ -30,6 +30,7 @@ And will render the slide like this:
         Title of the slide
 
 Left part         |  Right part
-                  |  and rest of content
-                  |  and it can continue here
+        
+          and rest of content
+        and it can continue here
 ```
