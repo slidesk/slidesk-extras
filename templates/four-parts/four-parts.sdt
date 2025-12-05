@@ -1,0 +1,34 @@
+<div class="four-parts">
+
+<sd-title />
+
+<sd-top />
+
+<div class="parts">
+<div class="one">
+
+<sd-one />
+
+</div>
+<div class="two">
+
+<sd-two />
+
+</div>
+<div class="three">
+
+<sd-three />
+
+</div>
+<div class="four">
+
+<sd-four />
+
+</div>
+</div>
+
+<sd-bottom />
+
+<sd-content />
+
+</div>

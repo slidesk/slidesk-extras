@@ -1,5 +1,7 @@
 <sd-title />
 
+<sd-top />
+
 <div class="split">
   <div class="left">
     <sd-left />
@@ -8,5 +10,7 @@
     <sd-right />
   </div>
 </div>
+
+<sd-bottom />
 
 <sd-content />

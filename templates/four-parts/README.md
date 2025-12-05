@@ -1,25 +1,36 @@
-# Split
+# Template: FourParts
 
 This template follows this structure:
 
 ```
-## Title of the slide .[#@gouz__split/split]
+## Title of the slide .[#four-parts]
 
-[[left]]
+[[one]]
 
-Left part
+First part
 
-[[/left]]
-
+[[/one]]
 
 and the rest of then content
 
+[[two]]
 
-[[right]]
+Second part
 
-Right part
+[[/two]]
 
-[[/right]]
+[[three]]
+
+Third part
+
+[[/three]]
+
+
+[[four]]
+
+Fourth part
+
+[[/four]]
 
 and it can continue here
 ```
@@ -27,12 +38,12 @@ and it can continue here
 And will render the slide like this:
 
 ```
-        Title of the slide
+            Title of the slide
 
-Left part         |  Right part
-        
-          and rest of content
-        and it can continue here
+First part  |  Second part  |  Third part | Fourth part
+
+               and rest of content
+            and it can continue here
 ```
 
 You can specify Top & Bottom parts too
@@ -46,23 +57,30 @@ Content on top
 
 [[/top]]
 
-[[left]]
+[[one]]
 
-Left part
+First part
 
-[[/left]]
+[[/one]]
 
+[[two]]
 
-and the rest of then content
+Second part
 
+[[/two]]
 
-[[right]]
+[[three]]
 
-Right part
+Third part
 
-[[/right]]
+[[/three]]
 
-and it can continue here
+[[four]]
+
+Fourth part
+
+[[/four]]
+
 
 [[bottom]]
 
@@ -80,10 +98,9 @@ And will render the slide like this:
 
               Content on top
 
-          Left part  |  Right part
+First part  |  Second part  |  Third part | Fourth part
 
               Content on bottom
               
-          and the rest of then content
             and it can continue here
 ```
