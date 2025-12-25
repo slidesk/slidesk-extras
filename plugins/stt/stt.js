@@ -20,7 +20,7 @@ window.addEventListener("load", () => {
       stopBtn.disabled = true;
     }
 
-    recognition.lang = "fr-FR";
+    recognition.lang = window.slidesk.env.STT_LANG ?? "fr-FR";
     recognition.continuous = true;
     recognition.interimResults = true;
 
@@ -40,7 +40,7 @@ window.addEventListener("load", () => {
           interimTranscript += event.results[i][0].transcript;
         }
       }
-      resultDiv.innerHTML = `<span>${finalTranscript}</span><span style="color: #999;">${interimTranscript}</span>`;
+      resultDiv.innerHTML = `<span>${finalTranscript}</span><span style="color: #333;">${interimTranscript}</span>`;
       resultDiv.scrollTop = resultDiv.scrollHeight;
     };
 

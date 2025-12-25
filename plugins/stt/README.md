@@ -17,3 +17,9 @@ To generate the two files, use this following command:
 ```
 openssl req -new -x509 -nodes -days 365 -keyout server.key -out server.crt
 ```
+
+If you want to change the default language ("fr-FR"), you have to specify it in `.env` file:
+
+```
+STT_LANG="en-EN"
+```
