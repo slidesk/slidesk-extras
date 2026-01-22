@@ -1,0 +1,15 @@
+<script type="module">
+    import { codeToHtml } from "https://esm.sh/shiki@3.0.0";
+
+    for await (const code of [
+        ...document.querySelectorAll("code[class^='language-']"),
+    ]) {
+        code.innerHTML = await codeToHtml(code.innerText, {
+            lang: [...code.classList]
+                .filter((c) => c.startsWith("language-"))
+                .shift()
+                .replace("language-", ""),
+            theme: window.slidesk.env.SHIKI_THEME ?? "min-light",
+        });
+    }
+</script>
