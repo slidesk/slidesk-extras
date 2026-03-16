@@ -2,3 +2,12 @@
     background-color: white;
     display: block;
 }
+
+pre:has(.language-mermaid) {
+    width: 90%;
+    background: white;
+
+    svg {
+        margin: 0 auto;
+    }
+}
